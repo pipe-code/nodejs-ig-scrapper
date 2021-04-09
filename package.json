@@ -1,0 +1,21 @@
+{
+  "name": "pipecode-ig-api",
+  "description": "",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "env-cmd -f ./.env nodemon index.js"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "instagram-web-api": "^2.2.2",
+    "nodemon": "^2.0.7"
+  },
+  "private": true,
+  "devDependencies": {}
+}
