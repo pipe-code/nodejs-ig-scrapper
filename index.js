@@ -22,8 +22,8 @@ app.get('/', function(req, res) {
 
   (async function() {
 
+    await client.login()
     if($_profile) {
-      await client.login()
       response = await client.getUserByUsername({ username: $_profile })
     } else if($_hashtag) {
       response = await client.getMediaFeedByHashtag({ hashtag: $_hashtag })
